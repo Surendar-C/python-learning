@@ -6,9 +6,9 @@ count = 0
 for element in elements:
     if not type(element) is int:
         continue;
-    else:
-        # lst = [int(x) for x in str(element)]
+    else:        
         # lst = list(element) --> this does not work here as int is not an iterable element
+        # lst = [int(x) for x in str(element)] --> this is also one option, if you wish to use the type as int
         lst = list(str(element))
         count = count + lst.count(str(id))
 
